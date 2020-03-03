@@ -1,18 +1,14 @@
 library(shiny)
 library(shinythemes)
 library(shinyWidgets)
-
 library(tidyverse)
 library(plotly)
-
 library(uwot)
 library(randomForest)
 library(nabor)
 library(DT)
-
 library(markdown)
 library(knitr)
-
 library(shinycssloaders)
 
 source('www/modal_funs.R')
