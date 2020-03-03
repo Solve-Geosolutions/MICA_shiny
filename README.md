@@ -1,9 +1,3 @@
----
-output: html_document
----
-
-
-
 ### What is MICA?
 *MICA* is a tool that aims to identify and group minerals that have similar chemical compositions.
 
@@ -16,7 +10,7 @@ Comparing minerals in 85-dimension space would be an impossible task. So using t
 
 In it's most basic form, *MICA* looks like this:
 <center>
-<img src="Image Coloured by Sulfer.png" align="middle" width="100%" margin="0 auto" />
+<img src="www/Image Coloured by Sulfer.png" align="middle" width="100%" margin="0 auto" />
 *Each dot represents a mineral. The minerals are coloured by their Sulfur and sized by their Copper content*
 </center>
 
