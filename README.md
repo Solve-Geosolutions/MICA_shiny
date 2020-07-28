@@ -3,7 +3,7 @@
 
 This is a fairly common problem; the identification of a mineral based on it's chemistry is a difficult task. Hopefully *MICA* can make it a bit easier!
 
-*MICA* is built from the database of minerals at [webmineral.com](www.webmineral.com) which consists of 4722 minerals. The composition of 85 elements for each mineral is recorded in the database. 
+*MICA* is built from the database of minerals at [webmineral.com](http://www.webmineral.com) which consists of 4722 minerals. The composition of 85 elements for each mineral is recorded in the database. 
 
 ### Finding similar minerals
 Comparing minerals in 85-dimension space would be an impossible task. So using the UMAP algorithm [(implemented in the uwot R package)](https://github.com/jlmelville/uwot), we reduce the dimensionality of the data to three dimensions. Now that our data is in 3D, we can visually assess similar groups of minerals and identify naturally occuring relationships between groups of minerals.
