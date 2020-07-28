@@ -8,7 +8,7 @@ This is a fairly common problem; the identification of a mineral based on it's c
 ### Finding similar minerals
 Comparing minerals in 85-dimension space would be an impossible task. So using the UMAP algorithm [(implemented in the uwot R package)](https://github.com/jlmelville/uwot), we reduce the dimensionality of the data to three dimensions. Now that our data is in 3D, we can visually assess similar groups of minerals and identify naturally occuring relationships between groups of minerals.
 
-In it's most basic form, *MICA* looks like this:
+In its most basic form, *MICA* looks like this:
 <center>
 <img src="www/Image Coloured by Sulfer.png" align="middle" width="100%" margin="0 auto" />
 *Each dot represents a mineral. The minerals are coloured by their Sulfur and sized by their Copper content*
