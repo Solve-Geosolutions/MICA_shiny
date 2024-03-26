@@ -1,0 +1,293 @@
+
+:root {
+
+  /* Colours */
+  --text-color: #000000;
+  --background-color: #FFFFFF;
+  --primary-color: #D57A5A;
+  --link-color: #52908F;
+  --white: #FFFFFF;
+  --dt-row-selected: #c1dbdb;
+}
+
+input[type="checkbox"] {
+  accent-color: #D57A5A !important;
+}
+
+input[type="radio"] {
+  accent-color: #D57A5A !important;
+}
+
+.shiny-flow-layout > div {
+    padding-right: 12px;
+    width: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: bold;
+}
+
+h1,
+.h1 {
+  font-size: 28px;
+}
+h2,
+.h2 {
+  font-size: 24px;
+}
+h3,
+.h3 {
+  font-size: 20px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 15px;
+}
+h6,
+.h6 {
+  font-size: 13px;
+}
+
+
+.shiny-input-panel {
+  background-color: #F8F5F2 !important;
+}
+
+.well {
+  background-color: #F8F5F2 !important;
+}
+
+.out-of-sync {
+    opacity: 0.4;
+    background-color: #cccccc;
+    filter: saturate(50%);
+  }
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--link-color);
+}
+
+
+/* Account for logo size */
+.navbar-brand {
+  height: 40px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  line-height: 40px;
+  bottom: 0px;
+  font-size: 17px;
+}
+
+.navbar {
+    background-color: #E9DFD2;
+    border-bottom: none; /* This removes the border */
+}
+
+.navbar-default .navbar-nav > li > a {
+  background-color: #E9DFD2;
+  color: #000000;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #d6cbbc !important;
+  color: #000000;
+}
+
+.navbar a:hover {
+    background-color: #d6cbbc !important; /* Color when hovered */
+    /* other styling properties for hover */
+}
+
+label {
+  font-weight: 400;
+}
+
+/* See more text within inputs */
+.form-control {
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.has-feedback .form-control {
+    padding-right: 30px; /* enough padding to account for the (x) clear button but not so much that text is unnecessarily truncated */
+}
+
+
+/* For the standard suites lock */
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+    background: #D57A5A;
+}
+
+/* For the pickerInputs */
+.bootstrap-select > .dropdown-toggle, .bootstrap-select > .dropdown-toggle:hover {
+  color: black;
+  background-color: white;
+  border-color: #AAAAAA;
+}
+
+.open > .dropdown-toggle.btn-default, .open > .dropdown-toggle.btn-default:hover {
+  color: black !important;
+  background-color: white !important;
+  border-color: #AAAAAA !important;
+}
+
+
+
+#dr_logo {
+  margin-top: 15px;
+}
+
+
+.myDT .datatables-scroll {
+  overflow-x: auto;
+  width: 100%;
+  max-height: 500px;
+}
+
+.myDT .datatables-scroll .dataTable thead tr th,
+.myDT .datatables-scroll .dataTable thead tr th.sorting,
+.myDT .datatables-scroll thead tr td {
+  position: sticky;
+  background-color: #FFFFFF;
+}
+.myDT .datatables-scroll thead tr th {
+  top: 0;
+}
+.myDT .datatables-scroll thead tr td {
+  top: 2.45em;
+}
+
+.myDT table.dataTable tr.selected td,
+.myDT .datatables-scroll table.dataTable tr.selected td {
+    box-shadow: inset 0 0 0 9999px #c1dbdb !important;
+    color: black;
+    border-top-color: #c1dbdb;
+}
+
+.myDT table.dataTable tr.active td,
+.myDT .datatables-scroll table.dataTable tr.active td {
+    box-shadow: inset 0 0 0 9999px #c1dbdb !important;
+    color: black;
+    border-top-color: #c1dbdb;
+}
+
+.myDT table.dataTable.hover > tbody > tr.selected:hover >*,
+.datatables-scroll table.dataTable.hover > tbody > tr.selected:hover >*,
+.myDT table.dataTable.display > tbody > tr.selected:hover >*,
+.datatables-scroll table.dataTable.display > tbody > tr.selected:hover >* {
+    box-shadow: inset 0 0 0 9999px #c1dbdb !important;
+    color: black;
+    border-top-color: #c1dbdb;
+}
+
+td > div.form-group > div.checkbox {
+  margin: 0px !important;}
+
+td > div.form-group {
+  margin: 0px !important;
+}
+
+td {
+  padding-top: 2px !important; padding-bottom: 2px !important;
+}
+
+/* wrap text within the filter boxes */
+.myDT .selectize-control {
+  text-wrap: wrap
+}
+
+.clear_table_links {
+  display: inline-block;
+  vertical-align:top;
+  width: 100%;
+  text-align: right;
+}
+
+.clear_table_links >* {
+  padding-left: 15px;
+}
+
+.btn:hover {
+    background-color: #52908F; /* Replace #yourColor with the color you want */
+    color: white; /* Optional: change the text color if needed */
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+  outline: none;
+  outline-offset: none;
+}
+
+.btn:focus-visible, div.active:focus-visible {
+    outline: none;
+}
+
+.btn-default, .btn-default:active:hover, .btn-default:active:focus, .btn-default:focus, .btn-default.focus {
+  background-color: #52908F;
+  border-color:  #52908F;
+}
+
+
+/* Prevent "select all" button appearing in pickerInput in Explore page only */
+#mineral_explorer-show_menu-template .bs-select-all {
+  display: none !important;
+}
+#mineral_explorer-show_menu-template .bs-deselect-all {
+  width: 100% !important;
+}
+
+/* Dropdown button floating above content in commodity, gangue and explore pages */
+
+.initial-dropdown {
+    position: fixed;
+    top: 60px; /* This will be overridden by JavaScript */
+    left: 10px;
+    z-index: 1000;
+}
+
+.initial-dropdown > .sw-dropdown {
+    position: fixed;
+}
+
+.fixed-dropdown {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.fixed-dropdown > .sw-dropdown {
+    position: fixed;
+}
+
+.module-dropdownButton > .drop-menu-input > .bttn-material-circle.bttn-default {
+  color: white !important;
+  background: #D57A5A !important;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+.custom-side-panel {
+  width: 50px
+}
+
+.custom-main-panel {
+  margin-left: 50px
+}
+
+.module-dropdownButton > .drop-menu-input .tippy-box .tippy-content {
+  color: black !important;
+  font-size: 16px;
+  background: #F8F5F2 !important;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 1px solid black;
+}

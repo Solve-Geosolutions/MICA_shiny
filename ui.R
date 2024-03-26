@@ -1,15 +1,19 @@
 shinyUI(fluidPage(
   
   # Window title:
-  list(tags$head(HTML('<link rel="icon", href="SOLVE LABS_ICON_MONO_B@2x.png", type="image/png" />'))),
-  titlePanel(title="", windowTitle="MICA - Solve Geosolutions"),
+  list(tags$head(HTML('<link rel="icon", href="Datarock Favicon.png", type="image/png" />'))),
+  titlePanel(title="", windowTitle="MICA - Datarock"),
   
   # theme/tags:
-  theme = shinytheme("flatly"),
+  # theme = shinytheme("flatly"),
+  
   tags$head(tags$style("#minPlot{height:80vh !important;}")),
   tags$head(tags$style("#confusion_plot{height:70vh !important;}")),
   tags$head(tags$style("#clusterTile{height:115vh !important;}")),
   tags$head(tags$script(type="text/javascript", src = "right_image.js")),
+  
+  tags$head(tags$link(rel = "stylesheet", type="text/css", href="bootstrap.css")),
+  tags$head(tags$link(rel = "stylesheet", type="text/css", href="custom.css")),
   
   # offset body due to fixed-top
   tags$style(type="text/css", "body {padding-top: 60px;}"),
@@ -18,12 +22,13 @@ shinyUI(fluidPage(
   use_ModalInUI(),
   
   modalInUI(id = 'welcome', title = h2("Welcome to MICA!", align='center'),
-            img(src="SOLVE LABS_ICON_TEXT_STACKED_B.svg", height="400",
-                onclick ="window.open('http://www.solvegeosolutions.com/', '_blank')",
+            # img(src="SOLVE LABS_ICON_TEXT_STACKED_B.svg", height="400",
+            img(src="datarock_full.png", height="75",
+                onclick ="window.open('https://datarock.com.au', '_blank')",
                 style="display: block; margin-left: auto; margin-right: auto;"),
             br(),
             p('Hi! Use MICA to perform Mineral Identification and Compositional Analysis!', align='center'),
-            p('Click the logo ',  a(href="http://www.solvegeosolutions.com/", target='_blank', "or here"), ' to go to our website. ', a(href="mailto:info@solvegeosolutions.com", "Click here to email us!"), align='center'),
+            p('Click the logo ',  a(href="https://datarock.com.au", target='_blank', "or here"), ' to go to our website. ', a(href="https://datarock.com.au/contact/", target='_blank', "Click here to contact us!"), align='center'),
             br(),
             
             actionButton('closeWelcome', 'Let\'s go', width='100%')
@@ -34,8 +39,8 @@ shinyUI(fluidPage(
     sidebarPanel(width=5,
                  
                  navbarPage(div(img(src="MICA.png",
-                                    height="50",
-                                    onclick ="window.open('http://www.solvegeosolutions.com/', '_blank')"),
+                                    height="50px",
+                                    onclick ="window.open('https://datarock.com.au', '_blank')"),
                                 style = "position: relative; left: 0%; top: -70%"),
                             id = 'sidepanel',
                             position = "fixed-top",
@@ -50,7 +55,16 @@ shinyUI(fluidPage(
                                                           multiple=F,
                                                           options = pickerOptions(actionsBox = T,
                                                                                   size = 10,
-                                                                                  liveSearch = T))),
+                                                                                  liveSearch = T))
+                                              
+                                              # selectInput(inputId = 'confusionMin',
+                                              #             label = 'Mineral to compare:',
+                                              #             choices = c(Choose='', minerals_names),
+                                              #             selected = "Cummingtonite",
+                                              #             multiple=F, width = "100%")
+                                              
+                                              ),
+                                       
                                        column(width=6,
                                               numericInput(inputId = 'confusion_N',
                                                            label = 'Number of confusing minerals',

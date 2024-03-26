@@ -50,6 +50,5 @@ names(df)[1:6] <- c('Mineral', 'ChemFormula', 'x', 'y', 'z', 'Cluster')
 
 
 # knit help files
-# knit('www/introduction.Rmd', output = 'www/introduction.md')
 knit('www/whatIsMICA.Rmd', output = 'www/whatIsMICA.md')
 knit('www/howUseMICA.Rmd', output = 'www/howUseMICA.md')

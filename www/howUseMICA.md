@@ -5,7 +5,7 @@ output: html_document
 
 
 ### How can I use MICA?
-*MICA* welcomes you with a landing page. Click *Lets go* to start using the app. There have been some compatibility issues in Internet Explorer, so try something like Chrome, Firefox or the new Edge instead.
+*MICA* welcomes you with a landing page. Click *Lets go* to start using the app. There have been some compatibility issues in Internet Explorer, so try something like Chrome, Firefox or Edge instead.
 
 ### Confusion between minerals
 Once you're past the spash screen, you'll be brought to the mineral **Confusion** tab, which will allow you to select a mineral and chose the closest *N* minerals in terms of chemical composition.

@@ -12,7 +12,7 @@ This is a fairly common problem; the identification of a mineral based on it's c
 *MICA* is built from the database of minerals at [webmineral.com](www.webmineral.com) which consists of 4722 minerals. The composition of 85 elements for each mineral is recorded in the database. 
 
 ### Finding similar minerals
-Comparing minerals in 85-dimension space would be an impossible task. So using the UMAP algorithm [(implemented in the uwot R package)](https://github.com/jlmelville/uwot), we reduce the dimensionality of the data to three dimensions. Now that our data is in 3D, we can visually assess similar groups of minerals and identify naturally occuring relationships between groups of minerals.
+Comparing minerals in 85-dimension space would be an impossible task. So using the [UMAP algorithm](https://github.com/lmcinnes/umap), we reduce the dimensionality of the data to three dimensions. Now that our data is in 3D, we can visually assess similar groups of minerals and identify naturally occurring relationships between groups of minerals.
 
 In it's most basic form, *MICA* looks like this:
 <center>
@@ -25,11 +25,11 @@ Each of these individual dots represents one of the 4722 minerals found in the w
 The quantitative distance between points isn't particularly meaningful due to the highly non-linear nature of the dimension reduction. However, the distance between one point relative to another _is_ meaningful. Minerals that have a small distance between them are more similar than those which are far away.
 
 ### Creating natural groups of minerals
-We use the [DBSCAN R package](https://github.com/mhahsler/dbscan) to perform density-based clustering on the reduced-dimensionality mineral data. This gives us a bunch of clusters whos consituent minerals have similar chemical compositions.
+We use the [DBSCAN algorithm](https://en.wikipedia.org/wiki/DBSCAN) to perform density-based clustering on the reduced-dimensionality mineral data. This gives us a number of clusters with constituent minerals that have similar chemical compositions.
 
 *MICA* shows you a list of the elements in a selected cluster, along with their associated chemical formulae.
 
 ### Importance of elements within clusters
 Being able to quickly assess the importance of certain elements within a group of minerals can be informative.
 
-We use the [randomForest R package](https://cran.r-project.org/web/packages/randomForest/index.html) to build an unsupervised random forest model, purely for investigating feature importance. The mean decrease in the Gini index for each element is ranked and displayed.
+We use the [Random Forest algorithm](https://en.wikipedia.org/wiki/Random_forest) to build a quick unsupervised model that finds the elements that best distinguish the current cluster of minerals from all other minerals. The mean decrease in the Gini index for each element is ranked and displayed.

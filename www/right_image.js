@@ -1,3 +1,3 @@
 $( document ).ready(function() {
-  $( ".navbar .container-fluid" ).append( '<img src="SOLVE LABS_ICON_TEXT_W.svg" align="right" height="60px" onclick="window.open(&quot;http://www.solvegeosolutions.com/&quot;, &quot;_blank&quot;)">' );
+  $( ".navbar .container-fluid" ).append( '<img id="dr_logo", src="datarock_full.png" align="right" height="35px" onclick="window.open(&quot;https://datarock.com.au/&quot;, &quot;_blank&quot;)">' );
 });
