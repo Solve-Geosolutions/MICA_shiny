@@ -51,7 +51,7 @@ shinyUI(fluidPage(
                                               pickerInput(inputId = 'confusionMin',
                                                           label = 'Mineral to compare:',
                                                           choices = c(Choose='', minerals_names),
-                                                          selected = "Cummingtonite",
+                                                          selected = "Schorl",
                                                           multiple=F,
                                                           options = pickerOptions(actionsBox = T,
                                                                                   size = 10,
